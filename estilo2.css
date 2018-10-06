@@ -1,0 +1,103 @@
+
+body{width: 100%; height: 800px; background-color: #FFF; }
+.menu-nav{ width: 100%; height: 75px; background-color: #FFF; margin-top: -25px;}
+nav ul li {display: inline;float: right;}
+nav ul li a{ display:block; padding: 10px 25px; text-decoration: none; font-size: 18px; color: #000; 
+ border-radius: 5px;
+	background-color:#E0F8EC; margin-top: 20px; margin-right: 25px; transition: all 300ms;}
+	.desplegable{position: absolute; float: left; }
+	nav ul li a:hover{ padding: 15px 30px; background-color: #81f7f3; transition: all 300ms;}
+p{font-size: 25px; color: black;margin-top: 50px; margin-left: 25px;}
+.opaco{background-color: rgb(0,0,0,0.5); opacity: 50%; color: #000;position: absolute; margin-top: -95px; 
+	width: 100%; height: 74px;
+font-family: Verdana; font-size: 20px; color: white; text-align: center; }
+.pag-head{ width: 100%; height: 300px; background-color: black; margin-top: 25px; }
+.Cultivo{width: 100%; height: 300px; }
+.pag-cuerpo{width: 98%; height:900px; background-color: #E3F6CE; margin:auto; }
+.imagen h2{ text-align: center;font-size: 25px; font-family: arial; color: black; text-shadow: 0px 0px 6px black;}
+.texto h1{text-align: center;font-size: 40px; font-family: arial; color: black; text-shadow: 0px 0px 6px black;}
+.texto p{text-align: center;font-size: 15px; font-family: arial; color: black; text-shadow: 0px 0px 5px black;transition: all 300ms;}
+.texto p:hover{transform: scale(1.1); transition: all 300ms;}
+.imagen h1{text-align: center;font-size: 40px; font-family: arial; color: black; text-shadow: 0px 0px 6px black;}
+.imagen p{text-align: center;font-size: 15px; font-family: arial; color: black; text-shadow: 0px 0px 5px black;transition: all 300ms;}
+.imagen p:hover{transform: scale(1.1); transition: all 300ms;}
+.img{width:600px;height: 200px;  transition: all 300ms;cursor: pointer; margin: auto;}
+.img:hover{transform: scale(1.1); transition: all 400ms;cursor: pointer; }
+
+
+.pag-contenido{width: 98%; height:500px; background-color: #E3F6CE; margin:auto; }
+.logo{float: left; height: 100px;width: 100px; transition: all 400ms; margin-left: 50px;margin-top: 10px;}
+.logo img{width: 75px; height: 50px; transition: all 400ms;	 cursor: pointer;}
+
+.logo:hover{transform: scale(0.9); transition: all 400ms;cursor: pointer; }
+.texto{float: left; width: 45%; height: 250px; background-color: transparent; border-bottom: 1px;
+ border-bottom-color: black; margin-left: 25px; }
+.imagen{width: 40%; height: 200px; margin-left: 25px; margin-top: 25px;	 float: left;}
+/*.pag-pie{ width: 100%; height: 150px; background-color:rgb(0,0,0,0.5); text-align: center; }*/
+
+
+.content-all{
+	width: 210px;
+	 perspective: 1000px; 
+	 position: relative;
+	  margin: auto;
+	  
+	}
+
+.content-carrousel{
+ width: 80%;
+  position: absolute;
+ animation: rotar 20s infinite linear; 
+ transform-style: preserve-3d; 
+}
+
+.content-carrousel figure{ 
+	width: 100%; 
+	height: 120px;
+	 position: absolute; 
+	 overflow: hidden;
+	 box-shadow: 0px 0px 20px 0px black;
+	}
+
+.content-carrousel:hover{ 
+animation-play-state: paused;
+cursor: pointer;
+	}
+
+.content-carrousel img{ width:100%;  transition: all 300ms;    }
+.content-carrousel img:hover{ transform: scale(1.2); transition: all 300ms; }
+
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+.content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+.content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+.content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+.content-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+
+
+@keyframes rotar{ 
+	from{
+		transform: rotateY(0deg);
+		}
+to{transform: rotateY(360deg);
+}
+
+		  }
+
+
+
+@media screen and (max-width:980px) {
+		body{width: 100%; height: 800px; background-color: #FFF; }
+		.menu-nav{ width: 100%; height: 75px; background-color: #FFF; }
+		nav ul li {display: inline;float: right;}
+
+nav ul li a{ display:block; padding: 5px 15px; text-decoration: none; font-size: 18px; color: #000; 
+ border-radius: 5px; background-color:#E0F8EC; margin-top: 20px; margin-right: 25px; transition: all 300ms;}
+	.desplegable{position: absolute; float: left; }
+
+} 
